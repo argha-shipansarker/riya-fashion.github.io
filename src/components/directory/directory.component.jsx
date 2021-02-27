@@ -8,7 +8,6 @@ class Dirctory extends Component {
         sections: Sections,
     }
     render() {
-        console.log(this.props);
         return (
             <div className="directory-menu">
                 {this.state.sections.map(({ id, ...otherProps }) => (
