@@ -2,19 +2,12 @@ import React from "react";
 import "./cart-item.styles.scss";
 
 const CartItem = ({ cartItem: { imageUrl, name, price, quantity } }) => {
-    console.log(name, quantity);
     return (
         <div className="cart-item">
-            <div
-                className="image"
-                style={{
-                    backgroundImage: `url(${imageUrl})`
-                }}
-            />
+            <img src={imageUrl} alt="item" />
             <div className="information">
-                <span>{name}</span> <br />
-                <span>{quantity}</span>
-                <span> x {price}</span>
+                <span>{name}</span>
+                <span>{quantity} x ${price}</span>
             </div>
         </div>
     )

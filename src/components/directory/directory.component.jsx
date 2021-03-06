@@ -3,6 +3,7 @@ import "./directory.styles.scss"
 import Sections from "./item-data"
 import MenuItem from "../menu-item/menu-item.component"
 
+
 class Dirctory extends Component {
     state = {
         sections: Sections,
